@@ -1,5 +1,6 @@
 import { Stack, TextField, InputAdornment } from '@mui/material';
 import { useState } from 'react';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 export const MuiTextField = () => {
 
@@ -34,6 +35,7 @@ export const MuiTextField = () => {
             <TextField label='Weight' InputProps={{
              endAdornment: <InputAdornment position='end'>kg</InputAdornment>
              }}/>
+             <TextField label='password' InputProps={{endAdornment: <InputAdornment position='end'><VisibilityIcon /></InputAdornment>}}/>
         </Stack>
     </Stack>
   )
