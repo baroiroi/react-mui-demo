@@ -1,7 +1,8 @@
-import { Box, Stack, Divider } from '@mui/material';
+import { Box, Stack, Divider, Grid } from '@mui/material';
 
 export const MuiLayout = () => {
   return (
+    <>
   <Stack sx={{
     border: '1px solid',
   }} direction='row' spacing={2} divider={<Divider orientation='vertical' flexItem />}>
@@ -27,5 +28,20 @@ export const MuiLayout = () => {
         Noha
     </Box>
   </Stack>
+  <Grid container my={4}>
+    <Grid item xs={3}>
+      <Box bgcolor='primary.light' padding={2}>Item 1</Box>
+    </Grid>
+    <Grid item xs={9}>
+      <Box bgcolor='primary.light' padding={2}>Item 2</Box>
+    </Grid>  
+    <Grid item xs={9}>
+      <Box bgcolor='primary.light' padding={2}>Item 3</Box>
+    </Grid>  
+    <Grid item xs={3}>
+      <Box bgcolor='primary.light' padding={2}>Item 4</Box>
+    </Grid>     
+  </Grid>
+  </>
   )
 }
