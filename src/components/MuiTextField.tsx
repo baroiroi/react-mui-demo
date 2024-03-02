@@ -3,7 +3,6 @@ import { useState } from 'react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
 export const MuiTextField = () => {
-
     const [value, setValue] = useState('');
   return (
     <Stack spacing={4}>
