@@ -1,6 +1,6 @@
 import './App.css';
-import { MuiTesting } from './components/MuiTesting';
-// import { MuiLayout } from './components/MuiLayout';
+// import { MuiTesting } from './components/MuiTesting';
+import { MuiLayout } from './components/MuiLayout';
 // import { MuiAutocomplete } from './components/MuiAutocomplete';
 // import { MuiRating } from './components/MuiRating';
 // import { MuiSwitch } from './components/MuiSwitch';
@@ -23,8 +23,8 @@ function App() {
      {/* <MuiSwitch /> */}
      {/* <MuiRating /> */}
      {/* <MuiAutocomplete /> */}
-     {/* <MuiLayout /> */}
-     <MuiTesting />
+     <MuiLayout />
+     {/* <MuiTesting /> */}
     </div>
   );
 }
