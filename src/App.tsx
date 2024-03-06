@@ -1,4 +1,5 @@
 import './App.css';
+import { MuiBreadCrumbs } from './components/MuiBreadCrumbs';
 import { MuiLink } from './components/MuiLink';
 import { MuiNavBar } from './components/MuiNavBar';
 // import { MuiImageList } from './components/MuiImageList';
@@ -35,6 +36,7 @@ function App() {
      {/* <MuiImageList /> */}
      <MuiNavBar />
      <MuiLink />
+     <MuiBreadCrumbs />
     </div>
   );
 }
