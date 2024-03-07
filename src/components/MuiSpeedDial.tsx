@@ -11,7 +11,7 @@ export const MuiSpeedDial = () => {
         position: 'absolute',
         bottom: 16,
         right: 16   
-    }} icon={<SpeedDialIcon openIcon={<EditIcon />}/>}>
+    }} icon={<SpeedDialIcon openIcon={<EditIcon />} />}>
 
         <SpeedDialAction icon={<FileCopyIcon />} tooltipTitle='Copy'tooltipOpen/>
         <SpeedDialAction icon={<PrintIcon />} tooltipTitle='Print'  tooltipOpen/>
