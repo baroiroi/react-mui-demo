@@ -3,7 +3,7 @@ import FaceIcon from '@mui/icons-material/Face';
 import { useState } from 'react';
 
 export const MuiChip = () => {
-    const [chips, setChips] = useState(['Chip 1', 'Chip 2','Chip 3']);
+    const [chips, setChips] = useState(['Chip 1', 'Chip 2','Chip 3', 'Chip 4']);
     const handleDelete = (chipToDelete: string) => {
         setChips(chips => chips.filter(chip => chip !== chipToDelete))
     }
