@@ -17,7 +17,7 @@ export const MuiSnackbar = () => {
     onClose={handleClose}
     anchorOrigin={{
         vertical: 'bottom',
-        horizontal: 'right',
+        horizontal: 'center',
     }}/>    
     </>
   )
