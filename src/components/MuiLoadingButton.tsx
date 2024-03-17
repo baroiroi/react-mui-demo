@@ -1,7 +1,9 @@
 import { Stack } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
+import { useState } from 'react';
 
-export const MuiLoadiingButton = () => {
+export const MuiLoadingButton = () => {
+  const [loading, setLoading] = useState(false);
   return (
     <Stack spacing={2} direction='row'>
         <LoadingButton variant='outlined'centerRipple>Submit</LoadingButton>
@@ -10,7 +12,8 @@ export const MuiLoadiingButton = () => {
         <LoadingButton variant='outlined' loadingIndicator='loading...' loading>Fetch Data</LoadingButton>
         <LoadingButton variant='outlined'
         loadingIndicator='loading'
-        centerRipple>Fetch Data</LoadingButton>
+        centerRipple
+        >Fetch Data</LoadingButton>
     </Stack>
   )
 }
