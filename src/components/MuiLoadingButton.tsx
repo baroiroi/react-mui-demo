@@ -36,7 +36,7 @@ const handleSave = (event: React.MouseEvent<HTMLElement>) => {
             loading ? 'Loading...' : 'Fetch Data'
           }
         </LoadingButton>
-        <LoadingButton variant='outlined' loadingIndicator='loading...' onClick={handleSave} loadingPosition='start'>
+        <LoadingButton startIcon={<SaveIcon />}variant='outlined' loadingIndicator='loading...' onClick={handleSave} loadingPosition='start'>
           {
             saving ? 'Saving...' : 'Save'
           }
