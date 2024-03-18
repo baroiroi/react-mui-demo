@@ -1,8 +1,9 @@
 import './App.css';
 import { LocalizationProvider} from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { MuiDatePIcker } from './components/MuiDatePIcker';
-import { MuiTabs } from './components/MuiTabs';
+// import { MuiDatePIcker } from './components/MuiDatePIcker';
+// import { MuiTabs } from './components/MuiTabs';
+import { MuiTimeline } from './components/MuiTimeline';
 // import { MuiDateRangePIcker } from './components/MuiDateRangePIcker';
 // import { MuiLoadingButton } from './components/MuiLoadingButton';
 // import { MuiSkeleton } from './components/MuiSkeleton';
@@ -46,7 +47,7 @@ function App() {
      {/* <MuiTextField /> */}
      {/* <MuiSelect /> */}
      {/* <MuiRadioButton /> */}
-     {/* <MuiCheckBox /> */}
+     {/* <MuiCheckBox /> */}  
      {/* <MuiSwitch /> */}
      {/* <MuiRating /> */}
      {/* <MuiAutocomplete /> */}
@@ -73,9 +74,10 @@ function App() {
      {/* <MuiProgress /> */}
      {/* <MuiSkeleton /> */}
      {/* <MuiLoadingButton /> */}
-     <MuiDatePIcker />
+     {/* <MuiDatePIcker /> */}
      {/* <MuiDateRangePIcker /> */}
-     <MuiTabs />
+     {/* <MuiTabs /> */}
+     <MuiTimeline />
     </div>
     </LocalizationProvider>
   );
