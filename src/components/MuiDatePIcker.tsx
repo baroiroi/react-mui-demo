@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react'              //This is a Date and Time Picker component of Material UI
 import { Stack } from '@mui/material';
-
 import { DatePicker} from '@mui/x-date-pickers/DatePicker';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import { useState } from 'react';
-
 export const MuiDatePIcker = () => {
     const [selectedDate, setSelectedDate] = useState<Date | null>(null);
     const [selectedTime, setSelectedTime] = useState<Date | null>(null);
