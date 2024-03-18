@@ -11,7 +11,7 @@ export const MuiLoadingButton = () => {
 
     setTimeout(() => {
       setLoading(false);
-  }, 13000);
+  }, 2000);
 };
 
 const handleSave = (event: React.MouseEvent<HTMLElement>) => {
@@ -19,7 +19,7 @@ const handleSave = (event: React.MouseEvent<HTMLElement>) => {
 
   setTimeout(() => {
     setSaving(false);
-}, 13000);
+}, 2000);
 };
 
 
@@ -36,7 +36,7 @@ const handleSave = (event: React.MouseEvent<HTMLElement>) => {
             loading ? 'Loading...' : 'Fetch Data'
           }
         </LoadingButton>
-        <LoadingButton startIcon={<SaveIcon />}variant='outlined' loadingIndicator='loading...' onClick={handleSave} loadingPosition='start'>
+        <LoadingButton startIcon={<SaveIcon />}variant='outlined' loadingIndicator='loading...' onClick={handleSave}>
           {
             saving ? 'Saving...' : 'Save'
           }
