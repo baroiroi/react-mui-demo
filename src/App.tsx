@@ -1,4 +1,5 @@
 import './App.css';
+import { createTheme, colors, ThemeProvider } from '@mui/material';
 import { LocalizationProvider} from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 // import { MuiDatePIcker } from './components/MuiDatePIcker';
@@ -40,8 +41,19 @@ import { MuiResponsiveness } from './components/MuiResponsiveness';
 // import { MuiTypography } from './components/MuiTypography';
 // import { MuiSelect } from './components/MuiSelect';
 
+const theme = createTheme({
+  status: {
+    danger: '#e53e3e',
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+  }
+})
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <LocalizationProvider dateAdapter={AdapterDayjs}>
     <div className="App">
      {/* <MuiTypography /> */}
@@ -84,6 +96,7 @@ function App() {
      <MuiResponsiveness />
     </div>
     </LocalizationProvider>
+    </ThemeProvider>
   );
 }
 
